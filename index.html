@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <h1>Bookshelf Apps</h1>
+        <div class="search">
+            <form action="#">
+                <input type="text" placeholder="Cari berdasarkan Judul...." name="search" id="search">
+                <button type="submit">Cari</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="tambahBuku">
+            <p>Masukkan Nama Buku Baru</p>
+            <form action="#">
+                <input type="text" placeholder="Masukkan Judul Buku" id="inputJudul" name="Judul" required>
+                <input type="text" placeholder="Masukkan Penulis Buku" id="inputPenulis" name="penulis" required>
+                <input type="number" placeholder="Masukkan Tahun Terbit Buku" id="inputTahun" name="tahun" required>
+                <div class="checkbox">
+                    <input type="checkbox" id="inputIsCompleted" name="isCompleted" value="isCompleted">
+                    <label for="inputIsCompleted">Selesai Dibaca</label>
+                </div>
+                <button id="input">Masukkan buku ke rak</button>
+            </form>
+        </div>
+        <div class="koleksiBuku">
+            <div class="NotComplete">
+                <p class="judul">List Buku yang Belum dibaca</p>
+                <div class="list-buku">
+                    
+                </div>
+            </div>
+            <div class="Complete">
+                <p class="judul">List Buku yang sudah dibaca</p>
+                <div class="list-buku">
+                    
+                </div>      
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>this website created by <a href="">Tora DK</a> with <span style="color: red;">❤</span> :)</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
